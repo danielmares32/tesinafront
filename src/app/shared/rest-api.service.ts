@@ -10,7 +10,7 @@ import { Chat } from './chat';
 })
 export class RestApiService {
   // Define API
-  apiURL = 'https://tesinabackfunction.azurewebsites.net/api/';
+  apiURL = 'https://tesinabackfunction.azurewebsites.net/api';
 
   constructor(private http: HttpClient) {}
   /*========================================

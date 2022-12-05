@@ -10,6 +10,23 @@ import { Socket } from 'ngx-socket-io';
 })
 export class ChatComponent implements OnInit {
   userName:string='';
+  users: { name: string, title: string }[] = [
+    { name: 'Carla Espinosa', title: 'Nurse' },
+    { name: 'Bob Kelso', title: 'Doctor of Medicine' },
+    { name: 'Janitor', title: 'Janitor' },
+    { name: 'Perry Cox', title: 'Doctor of Medicine' },
+    { name: 'Ben Sullivan', title: 'Carpenter and photographer' },
+    { name: 'Alan Green', title: 'Nurse' },
+    { name: 'Lewis Roberts', title: 'Doctor of Medicine' },
+    { name: 'Janitor John', title: 'Janitor' },
+    { name: 'Harvey Smith', title: 'Doctor of Medicine' },
+    { name: 'Ross Sullivan', title: 'Carpenter and photographer' },
+    { name: 'Tonny Brown', title: 'Janitor' },
+    { name: 'Richard Jones', title: 'Doctor of Medicine' },
+    { name: 'Ben Paterson', title: 'Carpenter and photographer' },
+    { name: 'Peter Clark', title: 'Nurse' },
+    { name: 'Paul Davidson', title: 'Doctor of Medicine' },
+  ];
   constructor(private socket: Socket) { }
   ngOnInit(): void {
     this.userName=sessionStorage.getItem('nombre')!;

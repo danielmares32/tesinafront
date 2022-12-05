@@ -18,7 +18,7 @@ import { ProductosComponent } from './productos/productos.component';
 import { ChatComponent } from './chat/chat.component';
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
 
-const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
+const config: SocketIoConfig = { url: 'https://tesinabackfunction.azurewebsites.net/api/', options: {} };
 
 @NgModule({
   declarations: [
